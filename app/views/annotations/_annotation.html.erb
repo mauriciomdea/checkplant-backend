@@ -1,0 +1,35 @@
+<div id="<%= dom_id annotation %>">
+
+  <p>
+    <strong>Id:</strong>
+    <%= annotation.id %>
+  </p>
+
+  <p>
+    <strong>User:</strong>
+    <%= User.find(annotation.user_id).email %>
+  </p>
+
+  <p>
+    <strong>Text:</strong>
+    <%= annotation.text %>
+  </p>
+
+  <p>
+    <strong>Latitude:</strong>
+    <%= annotation.latitude %>
+  </p>
+
+  <p>
+    <strong>Longitude:</strong>
+    <%= annotation.longitude %>
+  </p>
+
+  <p>
+    <strong>Date:</strong>
+    <%= annotation.created_at %>
+  </p>
+
+  <br/>
+
+</div>

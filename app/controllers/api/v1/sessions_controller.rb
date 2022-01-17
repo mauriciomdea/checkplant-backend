@@ -1,6 +1,6 @@
-class Api::V1::SessionsController < ApplicationController
-  protect_from_forgery with: :null_session # Turns off Rails CSRF protection for API requests
+class Api::V1::SessionsController < Api::V1::ApiController
 
+  # POST /api/v1/sessions
   def create
 
     if @user = User.find_by(email: params[:email])
